@@ -4,4 +4,5 @@ function component() {
   return element;
 }
 
+console.log("Hello, Webpack!");
 document.body.appendChild(component());
