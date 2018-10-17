@@ -18,7 +18,7 @@
     "awesome-typescript-loader": "^5.2.1",
     "clean-webpack-plugin": "^0.1.19",
     "html-webpack-plugin": "^4.0.0-beta.2",
-    "inferno-devtools": "^6.0.1",
+    "inferno-devtools": "^6.0.2",
     "ts-transform-inferno": "^3.0.1",
     "tslint": "^5.11.0",
     "typescript": "^3.1.3",
