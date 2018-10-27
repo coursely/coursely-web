@@ -1,15 +1,10 @@
-import { Component, render } from "inferno";
-import { initDevTools } from "inferno-devtools";
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 
-if (process.env.NODE_ENV == "development") {
-  console.log("development");
-  initDevTools();
-}
-
-class App extends Component {
+class App extends React.Component {
   render() {
-    return <div>Hello, Inferno!</div>;
+    return <div>Hello, React!</div>;
   }
 }
 
-render(<App />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById("app"));
