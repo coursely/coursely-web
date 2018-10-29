@@ -1,4 +1,6 @@
 # Coursely Web Client
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcoursely%2Fcoursely-web.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcoursely%2Fcoursely-web?ref=badge_shield)
+
 
 ## Development
 
@@ -18,3 +20,7 @@ npm start
 ```bash
 npm test
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcoursely%2Fcoursely-web.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcoursely%2Fcoursely-web?ref=badge_large)
