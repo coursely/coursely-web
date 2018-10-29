@@ -5,6 +5,9 @@
   "repository": "https://github.com/coursely/coursely-web",
   "author": "Jesse B. Hannah <jesse@jbhannah.net>",
   "license": "AGPL-3.0-or-later",
+  "engines": {
+    "node": ">= 10"
+  },
   "private": true,
   "scripts": {
     "build": "webpack --config webpack.prod.js",

@@ -4,7 +4,7 @@
 
 ### Requirements
 
-- Node 8.x+
+- Node 10.x+
 
 ### Usage
 
