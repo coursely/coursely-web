@@ -1,0 +1,31 @@
+version: v1.0
+name: coursely-web
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+
+blocks:
+  - name: Install
+    task:
+      prologue:
+        commands:
+          - checkout
+          - sem-version node $(cat .nvmrc)
+      jobs:
+        - name: npm
+          commands:
+            - cache restore node-modules-$(checksum package-lock.json)
+            - npm ci
+            - cache store node-modules-$(checksum package-lock.json) node_modules
+  - name: Tests
+    task:
+      prologue:
+        commands:
+          - checkout
+          - sem-version node $(cat .nvmrc)
+          - cache restore node-modules-$(checksum package-lock.json)
+      jobs:
+        - name: Jest
+          commands:
+            - npm test
